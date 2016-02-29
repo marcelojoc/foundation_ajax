@@ -2,16 +2,35 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    
     <link rel="stylesheet" href="css/style.css">
     <title>Prueba de javascript</title>
 </head>
 <body>
+    <div id="contenido">
+        6565656
+    </div>
+ 
+
     
-    
-    
-    <script src="js/lib/handlebars-v4.0.5.js "></script>
-    <script src="js/app.js "></script>
+ 
 </body>
 
+ <script src="js/lib/handlebars-v4.0.5.js "></script>
+<script src="js/app.js "></script>
 
+<!--plantilla hand-->
+<script id="articulo_tpl" type="text/x-handlebars-template"> 
+{{#each this }} 
+    <article class="marco">
+        <p><b>Nombre: </b>{{name}}</p>
+        <p><b>edad: </b>{{age}}</p>
+        <p><b>Imagen: </b><img src="{{picture}}" alt="{{name}}"></p>
+        <p><b>Empresa: </b>{{company}}</p>
+        <p><b>Email: </b>{{email}}</p>
+        <p><b>Telefono: </b>{{phone}}</p>
+        <p><b>Direccion: </b>{{address}}</p>                  
+    </article>
+{{/each}}
+</script> 
 </html>

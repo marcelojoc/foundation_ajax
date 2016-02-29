@@ -1,15 +1,4 @@
-function Persona (nombre){
-    this.nombre= nombre;
-    
-};
 
-    Persona.prototype.hablar = function () {
-    console.log(this.nombre);
-    },
-    
-    Persona.prototype.saludar= function(){
-        console.log("hola");
-    };
 
 function getJson(url, fRetorno){
     var jsonObj ={};
@@ -29,23 +18,54 @@ function getJson(url, fRetorno){
     }
 
 }
-// Definimos como queremos realizar la comunicación
-ajax_request.open( "GET", url, true );
-//Enviamos la solicitud
-ajax_request.send();
-
+    // Definimos como queremos realizar la comunicación
+    ajax_request.open( "GET", url, true );
+    //Enviamos la solicitud
+    ajax_request.send();
 };
 
 
 
 (function()
 { 
-    var inicio= getJson("http://127.0.0.1:82/datoJson/datos.json", function(dato){
-        
-        console.log(dato);
-    }) 
-        
-   
-    
-    
+
+    window.addEventListener('load', function(){
+
+        getJson("http://127.0.0.1:82/datoJson/datos.json", function(dato){
+
+        var contenedor = document.getElementById("contenido");
+        var tmpl = document.getElementById("articulo_tpl").innerHTML;  
+        var plantilla = Handlebars.compile(tmpl); 
+        var html= plantilla(dato);
+        contenedor.innerHTML=html;
+        });
+    });
+
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function Persona (nombre){
+//     this.nombre= nombre;
+    
+// };
+
+//     Persona.prototype.hablar = function () {
+//     console.log(this.nombre);
+//     },
+    
+//     Persona.prototype.saludar= function(){
+//         console.log("hola");
+//     };

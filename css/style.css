@@ -1,0 +1,12 @@
+body{
+    background-color: aquamarine;
+}
+
+/* estilos para el marco*/
+
+.marco{
+  width: 30%;
+  margin: 0 auto; 
+  border: solid 1px mediumseagreen;
+  padding: 5px;
+}
