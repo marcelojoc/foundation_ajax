@@ -31,7 +31,7 @@ function getJson(url, fRetorno){
 
     window.addEventListener('load', function(){
 
-        getJson("http://127.0.0.1:82/datoJson/datos.json", function(dato){
+        getJson("datos.json", function(dato){
 
         var contenedor = document.getElementById("contenido");
         var tmpl = document.getElementById("articulo_tpl").innerHTML;  

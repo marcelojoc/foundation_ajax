@@ -1,0 +1,10 @@
+$colorbase :orange;
+$colorbase2: #f4e ;
+
+.marco{
+    
+    background-color: lighten($color: $colorbase2, $amount: 25%);
+    border: 1px solid darken($color: $colorbase, $amount: 10%);
+    width: 45%;
+    
+};
