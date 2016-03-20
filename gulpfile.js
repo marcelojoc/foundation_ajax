@@ -7,12 +7,12 @@ var connect = require('gulp-connect');
 gulp.task('sass', function () {
   return gulp.src('css/sass/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('css'));
-    
+    .pipe(gulp.dest('css'))
+    .pipe(connect.reload());
 });
 
 gulp.task('html', function () {
-  gulp.src('*.html')
+    gulp.src('*.html')
     .pipe(connect.reload());
 });
 
@@ -23,6 +23,10 @@ gulp.task('connect', function(){
         livereload:true
     });
 });
+
+
+
+
 
 
 

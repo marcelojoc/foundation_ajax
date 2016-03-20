@@ -26,22 +26,22 @@ function getJson(url, fRetorno){
 
 
 
-(function()
-{ 
+// (function()
+// { 
 
-    window.addEventListener('load', function(){
+//     window.addEventListener('load', function(){
 
-        getJson("datos.json", function(dato){
+//         getJson("datos.json", function(dato){
 
-        var contenedor = document.getElementById("contenido");
-        var tmpl = document.getElementById("articulo_tpl").innerHTML;  
-        var plantilla = Handlebars.compile(tmpl); 
-        var html= plantilla(dato);
-        contenedor.innerHTML=html;
-        });
-    });
+//         var contenedor = document.getElementById("contenido");
+//         var tmpl = document.getElementById("articulo_tpl").innerHTML;  
+//         var plantilla = Handlebars.compile(tmpl); 
+//         var html= plantilla(dato);
+//         contenedor.innerHTML=html;
+//         });
+//     });
 
-})();
+// })();
 
 
 

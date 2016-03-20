@@ -1,34 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    
+
     <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="css/style.css">
     <title>Prueba de javascript</title>
 </head>
+
 <body>
-    <div id="contenido">
-        6565656sssssaaaaaaaaa
+    <div class="top-bar" id="realEstateMenu">
+        <div class="top-bar-left">
+            <ul class="menu" data-responsive-menu="accordion">
+                <li class="menu-text">Interplanetary</li>
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="#">My Account</a></li>
+                <li><a class="button base3">Login</a></li>
+            </ul>
+        </div>
     </div>
+<br>
+
+    <div class="row expanded">
+        <div class="small-12 medium-8 columns" >
+            
+            <h1>Close Your Eyes and Open Your Mind</h1>
+            <p class="subheader">There is beauty in space, and it is orderly. There is no weather, and there is regularity. It is predictable. Everything in space obeys the laws of physics. If you know these laws, and obey them, space will treat you kindly.</p>
+            <button class="button base2">Take a Tour</button>
+            <button class="button">Start a free trial</button>    
+            
+            
+        </div>
+        
+        <div class="small-12 medium-4 columns">
+            <img src="http://placeimg.com/400/370/nature" alt="picture of space">
+        </div>
+
+    </div>
+
+<div class="row column">
+<hr>
+</div>
+
+
+
+<div class="row column expanded">
+    <p class="lead">Trending Planetary Destinations</p>
+</div>
+<div class="row small-up-1 medium-up-3 large-up-3">
+
+    <div class="column">
+        <div class="callout">
+            <p>Pegasi B</p>
+            <p><img src="http://placeimg.com/400/370/people" alt="image of a planet called Pegasi B"></p>
+            <p class="lead">Copernican Revolution caused an uproar</p>
+            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="column">
+        <div class="callout">
+            <p>Pegasi B</p>
+            <p><img src="http://placeimg.com/400/370/people" alt="image of a planet called Pegasi B"></p>
+            <p class="lead">Copernican Revolution caused an uproar</p>
+            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+    </div>
+
+
+
+    <div class="column">
+        <div class="callout">
+            <p>Pegasi B</p>
+            <p><img src="http://placeimg.com/400/370/people" alt="image of a planet called Pegasi B"></p>
+            <p class="lead">Copernican Revolution caused an uproar</p>
+            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+        </div>
+    </div>
+
+</div>
+
+
+
 
 </body>
 
- <script src="js/lib/handlebars-v4.0.5.js "></script>
+<script src="js/lib/handlebars-v4.0.5.js "></script>
 <script src="js/app.js "></script>
 
 <!--plantilla hand-->
-<script id="articulo_tpl" type="text/x-handlebars-template"> 
-    {{#each this }} 
-        <article class="marco">
-            <p><b>Nombre: </b>{{name}}</p>
-            <p><b>edad: </b>{{age}}</p>
-            <p><b>Imagen: </b><img src="{{picture}}" alt="{{name}}"></p>
-            <p><b>Empresa: </b>{{company}}</p>
-            <p><b>Email: </b>{{email}}</p>
-            <p><b>Telefono: </b>{{phone}}</p>
-            <p><b>Direccion: </b>{{address}}</p>                  
-        </article>
+<script id="articulo_tpl" type="text/x-handlebars-template">
+    {{#each this }}
+    <article class="marco">
+        <p><b>Nombre: </b>{{name}}</p>
+        <p><b>edad: </b>{{age}}</p>
+        <p><b>Imagen: </b><img src="{{picture}}" alt="{{name}}" class="thumbnail"></p>
+        <p><b>Empresa: </b>{{company}}</p>
+        <p><b>Email: </b>{{email}}</p>
+        <p><b>Telefono: </b>{{phone}}</p>
+        <p><b>Direccion: </b>{{address}}</p>
+    </article>
     {{/each}}
-</script> 
+</script>
+
 </html>

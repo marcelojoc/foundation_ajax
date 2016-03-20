@@ -1,10 +1,35 @@
-$colorbase :orange;
+$colorbase: #E06724;
 $colorbase2: #f4e ;
+$colorbase3: #9DE024 ;
+$colorbase4:#02A5FF;
 
-.marco{
+
+// .marco{
     
-    background-color: lighten($color: $colorbase2, $amount: 25%);
-    border: 1px solid darken($color: $colorbase, $amount: 10%);
-    width: 45%;
-    
-};
+//     background-color: lighten($color: $colorbase2);
+//     border: 1px solid darken($color: $colorbase);
+//     width: 45%;
+// };
+
+.base1{
+    background-color: $colorbase;
+}
+
+.base2{
+    background-color: $colorbase2;
+}
+
+.base3{
+    background-color: $colorbase3;
+}
+
+.base4{
+    background-color: $colorbase4;
+}
+
+.alturahd{
+    height: 300px;
+}
+.altura{
+    height: 200px;
+}

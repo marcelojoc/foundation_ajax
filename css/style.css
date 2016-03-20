@@ -1,4 +1,17 @@
-.marco {
-  background-color: #ffc4fa;
-  border: 1px solid #cc8400;
-  width: 45%; }
+.base1 {
+  background-color: #E06724; }
+
+.base2 {
+  background-color: #f4e; }
+
+.base3 {
+  background-color: #9DE024; }
+
+.base4 {
+  background-color: #02A5FF; }
+
+.alturahd {
+  height: 300px; }
+
+.altura {
+  height: 200px; }
