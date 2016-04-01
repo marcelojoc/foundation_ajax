@@ -21,26 +21,28 @@
         </div>
         <div class="top-bar-right">
             <ul class="menu">
-                <li><a href="#">My Account</a></li>
+                <li><a href="#">My Cuenta</a></li>
                 <li><a class="button base3">Login</a></li>
             </ul>
         </div>
     </div>
 <br>
 
-    <div class="row expanded">
-        <div class="small-12 medium-8 columns" >
+    <div class="row ">
+        <div class="small-12 medium-7 columns" >
             
             <h1>Close Your Eyes and Open Your Mind</h1>
-            <p class="subheader">There is beauty in space, and it is orderly. There is no weather, and there is regularity. It is predictable. Everything in space obeys the laws of physics. If you know these laws, and obey them, space will treat you kindly.</p>
+            <p class="subheader">There is beauty in space, and it is orderly. There is no weather, and there is regularity.
+                 It is predictable. Everything in space obeys the laws of physics. If you know these laws, and obey them, 
+                 space will treat you kindly.</p>
             <button class="button base2">Take a Tour</button>
             <button class="button">Start a free trial</button>    
             
             
         </div>
         
-        <div class="small-12 medium-4 columns">
-            <img src="http://placeimg.com/400/370/nature" alt="picture of space">
+        <div class="small-12 medium-5 columns show-for-medium ">
+            <img src="img/space1.jpg" alt="picture of space">
         </div>
 
     </div>
@@ -51,67 +53,84 @@
 
 
 
-<div class="row column expanded">
-    <p class="lead">Trending Planetary Destinations</p>
+<div class="row column ">
+    <p class="subheader">Lista de personas ....</p>
 </div>
-<div class="row small-up-1 medium-up-3 large-up-3">
+<div class="row small-up-1 medium-up-3 large-up-3" id="contenido">
 
-    <div class="column">
+    <!--<div class="column">
         <div class="callout">
-            <p>Pegasi B</p>
-            <p><img src="http://placeimg.com/400/370/people" alt="image of a planet called Pegasi B"></p>
-            <p class="lead">Copernican Revolution caused an uproar</p>
-            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
+            <p class="lead">Ficha de Usuario</p>
+            
+            <p><img src="http://placeimg.com/200/200/people" alt="{{name}}" class="thumbnail"></p>
+            <p><b>Nombre: </b>Marcelo del Carmen</p>
+            <p><b>edad: </b>34</p>
+
+            <p><b>Empresa: </b>grupohost</p>
+            <p><b>Email: </b>marcelojoc@tuvieja.com</p>
+            <p><b>Telefono: </b>+45 2615752623</p>
+            <p><b>Direccion: </b>las palmeras 1574</p>
         </div>
-    </div>
+    </div>-->
 
-
-
-
-
-    <div class="column">
-        <div class="callout">
-            <p>Pegasi B</p>
-            <p><img src="http://placeimg.com/400/370/people" alt="image of a planet called Pegasi B"></p>
-            <p class="lead">Copernican Revolution caused an uproar</p>
-            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-        </div>
-    </div>
-
-
-
-    <div class="column">
-        <div class="callout">
-            <p>Pegasi B</p>
-            <p><img src="http://placeimg.com/400/370/people" alt="image of a planet called Pegasi B"></p>
-            <p class="lead">Copernican Revolution caused an uproar</p>
-            <p class="subheader">Find Earth-like planets life outside the Solar System</p>
-        </div>
-    </div>
 
 </div>
 
-
+<footer>
+<div class="callout large secondary">
+    <div class="row">
+        <div class="large-4 columns">
+            <h5>Vivamus Hendrerit Arcu Sed Erat Molestie</h5>
+            <p>Curabitur vulputate, ligula lacinia scelerisque tempor, lacus lacus ornare ante, ac egestas est urna sit amet
+                arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie
+                augue sit.</p>
+        </div>
+        <div class="large-3 large-offset-2 columns">
+            <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+                <li><a href="#">Four</a></li>
+            </ul>
+        </div>
+        <div class="large-3 columns">
+            <ul class="menu vertical">
+                <li><a href="#">One</a></li>
+                <li><a href="#">Two</a></li>
+                <li><a href="#">Three</a></li>
+                <li><a href="#">Four</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
 
 
 </body>
 
 <script src="js/lib/handlebars-v4.0.5.js "></script>
+<script src="js/lib/spin.min.js "></script>
 <script src="js/app.js "></script>
+
 
 <!--plantilla hand-->
 <script id="articulo_tpl" type="text/x-handlebars-template">
+
     {{#each this }}
-    <article class="marco">
-        <p><b>Nombre: </b>{{name}}</p>
-        <p><b>edad: </b>{{age}}</p>
-        <p><b>Imagen: </b><img src="{{picture}}" alt="{{name}}" class="thumbnail"></p>
-        <p><b>Empresa: </b>{{company}}</p>
-        <p><b>Email: </b>{{email}}</p>
-        <p><b>Telefono: </b>{{phone}}</p>
-        <p><b>Direccion: </b>{{address}}</p>
-    </article>
+    <div class="column">
+        <div class="callout">
+            <p class="lead">Ficha de Usuario</p>
+            <p><img src="img/technics-q-c-330-200-7.jpg" alt="{{name}}" class="thumbnail"></p>
+            <p><b>Nombre: </b>{{name}}</p>
+            <p><b>edad: </b>{{age}}</p>
+            <p><b>Empresa: </b>{{company}}</p>
+            <p><b>Email: </b>{{email}}</p>
+            <p><b>Telefono: </b>{{phone}}</p>
+            <p><b>Direccion: </b>{{address}}</p>
+        </div>
+    </div>
     {{/each}}
 </script>
 
 </html>
+
