@@ -7,7 +7,7 @@ y gulp para automatizar tareas.
 - gulp-sass
 - gulp_connect
 - Handlebars
-- Spinner.js
+- spin.js
  
-- [] Proyecto sin terminar
+-     Proyecto sin terminar
 - [x] Proyecto terminado :+1:
